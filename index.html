@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4URSPACE UI</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">4UR<span>SPACE</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Schedule a Demo</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <!-- Notification Bell Button -->
+            <button class="notification-btn" id="notificationBtn">
+                <img src="./img/bell.svg" alt="">
+            </button>
+    
+            <!-- Notification Dropdown -->
+            <div class="notification-dropdown" id="notificationDropdown">
+                <p class="notification-title">Notifications</p>
+                <ul>
+                    <li>🔔 You have a new message!</li>
+                    <li>📅 Your meeting is scheduled at 3:00 PM</li>
+                    <!-- <li>✅ Project XYZ has been approved</li> -->
+                    <li>🚀 New feature updates are available</li>
+                </ul>
+            </div>
+    
+            <img src="./profile.jpg" alt="User Profile">
+        </div>
+    </header>
+   
+    <main>
+        <div class="main-sidebar">
+            <div class="main-sidebar-wrapper">
+                <div class="sidebar-icon-close">
+                    <button> <img src="./img/close-sidebar.svg" alt=""></button>
+                 </div>
+                 <div class="menu">
+
+
+                    <div class="container-menu">
+                        <div class="new-chat"><img src="./img/new.svg" alt=""> New chat</div>
+                        <!-- <div class="fill-tag">Fill (104) × Fill (38)</div> -->
+                        <div class="folder">New Folder</div>
+                        <div class="project-list">
+                            <div class="project">📁 MyNew Project <span>empty</span></div>
+                            <div class="project">📁 LV Singapore <span>4 chats</span></div>
+                            <div class="project">📁 Marina Bay Project ‘25 <span>3 chats</span></div>
+                            <div class="project">📁 SG Orchard <span>5 chats</span></div>
+                        </div>
+                        <div class="chat-list">
+                            <div><strong>Today</strong></div>
+                            <div class="chat-item">What is the average cost per square meter for...</div>
+                            <div class="chat-item">Show me how much we paid Grandwork in ea...</div>
+                            <div><strong>Yesterday</strong></div>
+                            <div class="chat-item">How much budget is left in LV SINGAPORE ION?</div>
+                            <div class="chat-item">Create a budget considering the last 2 projects in...</div>
+                        </div>
+                    </div>
+
+
+                 </div>
+            </div>
+        </div>
+        <div class="sidebar-icon active" id="toggleSidebar">
+            <button> <img src="./img/sidebar.svg" alt=""></button>
+         </div>
+        <section class="chat-container">
+            <div class="chat-container-text">
+            <h2>Hello <span>Alessandro</span></h2>
+            <p>Can I help you with anything?</p>
+            <p>Ready to assist you with anything you need, <br> from answering questions to providing <br>recommendations. Let's get started!</p>
+            </div>
+
+           <img src="./img/demo.jpg" alt="">
+            
+           <div class="card-container">
+            <div class="card">
+                <div class="card-icon"><img src="./img/college.svg" alt=""></div>
+                <div class="card-title">How many change orders do we have in LV SINGAPORE ION?</div>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon"><img src="./img/wallet.svg" alt=""></div>
+                <div class="card-title">Show the average cost per meter in Singapore in this year</div>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon"><img src="./img/home.svg" alt=""></div>
+                <div class="card-title">How many change orders do we have in LV SINGAPORE ION?</div>
+            </div>
+        </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <div class="chat-input-container">
+            <!-- File Upload Button -->
+            <div class="file" id="fileBtn">
+                <img src="./img/file.svg" alt="Attach" class="icon">
+                <input type="file" id="fileInput" class="hidden-input" accept=".pdf, .txt, .csv">
+
+            </div>
+        
+            <!-- Chat Input Field -->
+            <input type="text" class="chat-input" placeholder="Type a message...">
+        
+            <!-- Send Button -->
+            <div class="send">
+                <img src="./img/send.svg" alt="send-icon" class="icon">
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/b4564537dc.js" crossorigin="anonymous"></script>
+</body>
+</html>
