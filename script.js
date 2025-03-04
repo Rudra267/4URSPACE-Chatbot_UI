@@ -62,3 +62,27 @@ document.addEventListener("click", function(event) {
         dropdown.style.display = "none";
     }
 });
+
+
+// threedotproject
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.querySelectorAll(".three-dot").forEach(dot => {
+//         dot.addEventListener("mouseenter", function () {
+//             let dropdown = this.nextElementSibling;
+//             dropdown.style.display = "block";
+//         });
+//         dot.addEventListener("mouseleave", function () {
+//             let dropdown = this.nextElementSibling;
+//             setTimeout(() => {
+//                 dropdown.style.display = "none";
+//             }, 300);
+//         });
+//         dot.nextElementSibling.addEventListener("mouseenter", function () {
+//             this.style.display = "block";
+//         });
+//         dot.nextElementSibling.addEventListener("mouseleave", function () {
+//             this.style.display = "none";
+//         });
+//     });
+// });
