@@ -551,6 +551,7 @@ background: linear-gradient(180deg, rgb(0, 170, 203) 30%, rgba(0,123,255,1) 100%
     font-size: 13px;
 }
 .btn-chat{
+    cursor: pointer;
     margin-top: 15px;
     border: none;
     padding: 10px 20px;
