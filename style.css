@@ -262,10 +262,11 @@ nav a {
 }
 
 .card {
+    cursor: pointer;
     position: relative; 
     text-align: left;
     flex: 1;
-    background: white !important;
+    background: #fff !important;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -275,9 +276,33 @@ nav a {
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    border: 2px solid transparent;
+   
+    /* border: 2px solid #E3E6EB; Light grey border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px;
+ 
 }
 
+
+.card-wrap{
+    width: 250px;
+    padding: 2px;
+    background: #fff;
+    border-radius: 12px 12px 12px 12px;
+    transition: all 1s linear;
+}
+.card-wrap:hover{
+    background: linear-gradient(100deg, rgba(0,167,226,1) 30%, rgba(235, 236, 238, 0) 100%);
+
+}
+
+.card-wrap:nth-child(3){
+    padding: 1.5px;
+}
+
+.card-wrap:hover .card-icon{
+    background: linear-gradient(100deg, #2974D2 30%, #00A7E2 100%)
+}
 
 
 .card-icon {
