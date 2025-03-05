@@ -293,7 +293,7 @@ nav a {
 }
 
 .card-icon > img{
-    filter: invert(1);
+    filter: invert(0);
     width: 30px;
 }
 .card-title {
