@@ -1,11 +1,31 @@
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: SatoshiRegular;
+    src: url(./font/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: SatoshiLight;
+    src: url(./font/Satoshi-Light.otf);
+}
+
+@font-face{
+    font-family: SatoshiBold;
+    src: url(./font/Satoshi-Bold.otf);
+}
+
+@font-face{
+    font-family: SatoshiBoldL;
+    src: url(./font/Satoshi-Medium.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: SatoshiRegular;
 }
 
 body {
@@ -37,16 +57,17 @@ header {
 }
 
 .logo span {
-    color: #008cdd;
+    color: #2974D2;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 nav a {
+    font-family: SatoshiLight;
     text-decoration: none;
     color: #333333a2;
     text-transform: uppercase;
@@ -55,15 +76,16 @@ nav a {
 .profile {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
 .notification-btn {
     background: none;
     border: none;
-    width: 40px;
-    scale: 0.8;
+    width: 30px;
+    scale: 0.6;
+
     cursor: pointer;
 }
 
@@ -145,23 +167,23 @@ nav a {
     height: 86vh;
     border-radius: 10px;
     background-color: #fff;
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 
-/* .menu::-webkit-scrollbar {
+.menu::-webkit-scrollbar {
     width: 6px;
 }
 .menu::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f1f1f17a;
     border-radius: 10px;
 }
 .menu::-webkit-scrollbar-thumb {
-    background: #bbb;
+    background: #bbbbbb20;
     border-radius: 10px;
 }
 .menu::-webkit-scrollbar-thumb:hover {
     background: #888;
-} */
+}
 
 .main-sidebar-wrapper{
    width: 100%; 
@@ -195,22 +217,31 @@ nav a {
     top: 10px;
 }
 .chat-container-text > h2{
-    background: linear-gradient(45deg, #007bff, #00d4ff);
+    font-size: 30px;
+    font-family: SatoshiBold;
+    background: linear-gradient(45deg, #007bff, #00A7E2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: left;
     font-weight: 500;
     
 }
+.chat-container-text > h2 > span{
+    font-family: SatoshiBold;
+}
 
 .chat-container-text > p{
     text-align: left;
 }
 .chat-container-text > p:first-of-type{
-    font-size: 20px;
+    font-family: SatoshiBoldL;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000c0;
 }
 .chat-container-text > p:nth-of-type(2){
     padding-top: 10px;
+    font-family:  SatoshiLight;
 }
 
 .chat-container > img{
@@ -344,7 +375,7 @@ footer {
 .send {
     width: 50px;
     height: 50px;
-    background: linear-gradient(to right, #0084ff, #00c6ff);
+    background: linear-gradient(to right, #2974D2, #00A7E2);
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -370,7 +401,7 @@ footer {
 
 
 .voice-btn {
-    background: #008cdd;
+    background: #2974D2;
     color: white;
     border: none;
     padding: 10px;
@@ -428,7 +459,7 @@ footer {
 .new-chat {
     width: 150px;
    
-background: linear-gradient(180deg, rgb(0, 170, 203) 30%, rgba(0,123,255,1) 100%);
+background: linear-gradient(180deg, #00A7E2 30%, #007bff 70%);
 
     color: white;
     padding: 10px;
@@ -470,10 +501,13 @@ background: linear-gradient(180deg, rgb(0, 170, 203) 30%, rgba(0,123,255,1) 100%
     align-items: center;
     padding: 8px;
     border-radius: 5px;
-    background: #f4f4f4;
+    height: 40px;
     margin-bottom: 5px;
     cursor: pointer;
     position: relative;
+}
+.project:hover{
+    background: #f4f4f4;
 }
 .project span {
     margin-left: 10px;
@@ -487,10 +521,14 @@ background: linear-gradient(180deg, rgb(0, 170, 203) 30%, rgba(0,123,255,1) 100%
     margin: 0 10px 0 10px;
 }
 .three-dot {
+    display: none;
     margin-left: auto;
     cursor: pointer;
     padding: 5px;
     position: relative;
+}
+.project:hover .three-dot{
+    display: block;
 }
 .dropdown {
     display: none;
@@ -506,7 +544,7 @@ background: linear-gradient(180deg, rgb(0, 170, 203) 30%, rgba(0,123,255,1) 100%
 }
 .dropdown div {
     
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 8px;
     cursor: pointer;
 }
@@ -543,19 +581,30 @@ background: linear-gradient(180deg, rgb(0, 170, 203) 30%, rgba(0,123,255,1) 100%
 } */
 
 .chat-list-head{
-    margin: 10px 0 5px 0;
+    margin: 30px 0 5px 0;
 }
 .chat-item{
+    padding: 5px 10px;
     padding-top: 6px;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: SatoshiLight;
 }
+.chat-item:nth-of-type(3){
+    padding-top: 20px;
+}
+
+.chat-item:nth-of-type(6){
+    padding-top: 20px;
+}
+
 .btn-chat{
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 45px;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
+    background-color: #ddd;
 }
 .btn-chat > a{
     text-decoration: none;
